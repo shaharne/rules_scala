@@ -26,6 +26,7 @@ alias(
 
 setup_scala_toolchain(
     name = "unused_dependency_checker_error_toolchain",
+    dependency_mode = "plus-one",
     dependency_tracking_method = "ast-plus",
     unused_dependency_checker_mode = "warn",
     strict_deps_mode = "warn",
